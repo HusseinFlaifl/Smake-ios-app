@@ -7,14 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9784DB1820EF3CF800DCF746 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9784DB1720EF3CF800DCF746 /* SWRevealViewController.m */; };
 		97871AA220EAADEC00A88E6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97871AA120EAADEC00A88E6A /* AppDelegate.swift */; };
 		97871AA420EAADEC00A88E6A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97871AA320EAADEC00A88E6A /* ViewController.swift */; };
 		97871AA720EAADEC00A88E6A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97871AA520EAADEC00A88E6A /* Main.storyboard */; };
 		97871AA920EAADEC00A88E6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97871AA820EAADEC00A88E6A /* Assets.xcassets */; };
 		97871AAC20EAADEC00A88E6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97871AAA20EAADEC00A88E6A /* LaunchScreen.storyboard */; };
+		FE8044642094E95B95532E2E /* Pods_Smake.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD2B44B489F6DA578AB70184 /* Pods_Smake.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9784DB1520EF3CF700DCF746 /* Smake-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Smake-Bridging-Header.h"; sourceTree = "<group>"; };
+		9784DB1620EF3CF800DCF746 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		9784DB1720EF3CF800DCF746 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		97871A9E20EAADEC00A88E6A /* Smake.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Smake.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97871AA120EAADEC00A88E6A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		97871AA320EAADEC00A88E6A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,9 @@
 		97871AA820EAADEC00A88E6A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		97871AAB20EAADEC00A88E6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		97871AAD20EAADEC00A88E6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD2B44B489F6DA578AB70184 /* Pods_Smake.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Smake.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE8509021841E687E693BD1E /* Pods-Smake.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smake.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Smake/Pods-Smake.debug.xcconfig"; sourceTree = "<group>"; };
+		D6FB3722E9A6BDCD6BC9722A /* Pods-Smake.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smake.release.xcconfig"; path = "Pods/Target Support Files/Pods-Smake/Pods-Smake.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +37,47 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE8044642094E95B95532E2E /* Pods_Smake.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		10B1C9170D98F9C86C0DED1C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AD2B44B489F6DA578AB70184 /* Pods_Smake.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6B60016DC8722B983E7B7960 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CE8509021841E687E693BD1E /* Pods-Smake.debug.xcconfig */,
+				D6FB3722E9A6BDCD6BC9722A /* Pods-Smake.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9784DB1420EF3CB100DCF746 /* supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				9784DB1620EF3CF800DCF746 /* SWRevealViewController.h */,
+				9784DB1720EF3CF800DCF746 /* SWRevealViewController.m */,
+				9784DB1520EF3CF700DCF746 /* Smake-Bridging-Header.h */,
+			);
+			name = "supporting files";
+			sourceTree = "<group>";
+		};
 		97871A9520EAADEC00A88E6A = {
 			isa = PBXGroup;
 			children = (
 				97871AA020EAADEC00A88E6A /* Smake */,
 				97871A9F20EAADEC00A88E6A /* Products */,
+				6B60016DC8722B983E7B7960 /* Pods */,
+				10B1C9170D98F9C86C0DED1C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +92,7 @@
 		97871AA020EAADEC00A88E6A /* Smake */ = {
 			isa = PBXGroup;
 			children = (
+				9784DB1420EF3CB100DCF746 /* supporting files */,
 				97871AA120EAADEC00A88E6A /* AppDelegate.swift */,
 				97871AA320EAADEC00A88E6A /* ViewController.swift */,
 				97871AA520EAADEC00A88E6A /* Main.storyboard */,
@@ -71,9 +110,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 97871AB020EAADEC00A88E6A /* Build configuration list for PBXNativeTarget "Smake" */;
 			buildPhases = (
+				AC9C1249CD0453E4B4870952 /* [CP] Check Pods Manifest.lock */,
 				97871A9A20EAADEC00A88E6A /* Sources */,
 				97871A9B20EAADEC00A88E6A /* Frameworks */,
 				97871A9C20EAADEC00A88E6A /* Resources */,
+				E6D6F8F64593A6174875E4BF /* [CP] Embed Pods Frameworks */,
+				F2DB9DD71C5FE20CCB92D4D6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -96,6 +138,7 @@
 				TargetAttributes = {
 					97871A9D20EAADEC00A88E6A = {
 						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -131,6 +174,66 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		AC9C1249CD0453E4B4870952 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Smake-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E6D6F8F64593A6174875E4BF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Smake/Pods-Smake-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Socket.IO-Client-Swift-Q/SocketIOQ.framework",
+				"${BUILT_PRODUCTS_DIR}/StarscreamSocketIO/StarscreamSocketIO.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketIOQ.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/StarscreamSocketIO.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Smake/Pods-Smake-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F2DB9DD71C5FE20CCB92D4D6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Smake/Pods-Smake-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		97871A9A20EAADEC00A88E6A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -138,6 +241,7 @@
 			files = (
 				97871AA420EAADEC00A88E6A /* ViewController.swift in Sources */,
 				97871AA220EAADEC00A88E6A /* AppDelegate.swift in Sources */,
+				9784DB1820EF3CF800DCF746 /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,24 +364,31 @@
 		};
 		97871AB120EAADEC00A88E6A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE8509021841E687E693BD1E /* Pods-Smake.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Smake/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Hussein.Smake;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Smake/Smake-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		97871AB220EAADEC00A88E6A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6FB3722E9A6BDCD6BC9722A /* Pods-Smake.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Smake/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Hussein.Smake;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Smake/Smake-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -301,6 +412,7 @@
 				97871AB220EAADEC00A88E6A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
