@@ -8,8 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		9784DB1820EF3CF800DCF746 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9784DB1720EF3CF800DCF746 /* SWRevealViewController.m */; };
+		9784DB1D20EF59C900DCF746 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9784DB1C20EF59C900DCF746 /* ChatVC.swift */; };
+		9784DB1F20EF59E100DCF746 /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9784DB1E20EF59E100DCF746 /* ChannelVC.swift */; };
 		97871AA220EAADEC00A88E6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97871AA120EAADEC00A88E6A /* AppDelegate.swift */; };
-		97871AA420EAADEC00A88E6A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97871AA320EAADEC00A88E6A /* ViewController.swift */; };
 		97871AA720EAADEC00A88E6A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97871AA520EAADEC00A88E6A /* Main.storyboard */; };
 		97871AA920EAADEC00A88E6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97871AA820EAADEC00A88E6A /* Assets.xcassets */; };
 		97871AAC20EAADEC00A88E6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97871AAA20EAADEC00A88E6A /* LaunchScreen.storyboard */; };
@@ -20,9 +21,10 @@
 		9784DB1520EF3CF700DCF746 /* Smake-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Smake-Bridging-Header.h"; sourceTree = "<group>"; };
 		9784DB1620EF3CF800DCF746 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		9784DB1720EF3CF800DCF746 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		9784DB1C20EF59C900DCF746 /* ChatVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
+		9784DB1E20EF59E100DCF746 /* ChannelVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
 		97871A9E20EAADEC00A88E6A /* Smake.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Smake.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97871AA120EAADEC00A88E6A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		97871AA320EAADEC00A88E6A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		97871AA620EAADEC00A88E6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		97871AA820EAADEC00A88E6A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		97871AAB20EAADEC00A88E6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -71,6 +73,29 @@
 			name = "supporting files";
 			sourceTree = "<group>";
 		};
+		9784DB1920EF599000DCF746 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9784DB1C20EF59C900DCF746 /* ChatVC.swift */,
+				9784DB1E20EF59E100DCF746 /* ChannelVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		9784DB1A20EF59A300DCF746 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		9784DB1B20EF59A900DCF746 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		97871A9520EAADEC00A88E6A = {
 			isa = PBXGroup;
 			children = (
@@ -92,13 +117,15 @@
 		97871AA020EAADEC00A88E6A /* Smake */ = {
 			isa = PBXGroup;
 			children = (
-				9784DB1420EF3CB100DCF746 /* supporting files */,
+				9784DB1B20EF59A900DCF746 /* Model */,
+				9784DB1A20EF59A300DCF746 /* View */,
+				9784DB1920EF599000DCF746 /* Controller */,
 				97871AA120EAADEC00A88E6A /* AppDelegate.swift */,
-				97871AA320EAADEC00A88E6A /* ViewController.swift */,
 				97871AA520EAADEC00A88E6A /* Main.storyboard */,
 				97871AA820EAADEC00A88E6A /* Assets.xcassets */,
 				97871AAA20EAADEC00A88E6A /* LaunchScreen.storyboard */,
 				97871AAD20EAADEC00A88E6A /* Info.plist */,
+				9784DB1420EF3CB100DCF746 /* supporting files */,
 			);
 			path = Smake;
 			sourceTree = "<group>";
@@ -239,7 +266,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				97871AA420EAADEC00A88E6A /* ViewController.swift in Sources */,
+				9784DB1F20EF59E100DCF746 /* ChannelVC.swift in Sources */,
+				9784DB1D20EF59C900DCF746 /* ChatVC.swift in Sources */,
 				97871AA220EAADEC00A88E6A /* AppDelegate.swift in Sources */,
 				9784DB1820EF3CF800DCF746 /* SWRevealViewController.m in Sources */,
 			);
