@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		974CA47920EFB74E0047FEA6 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 974CA47820EFB74E0047FEA6 /* GradientView.swift */; };
 		9784DB1820EF3CF800DCF746 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9784DB1720EF3CF800DCF746 /* SWRevealViewController.m */; };
 		9784DB1D20EF59C900DCF746 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9784DB1C20EF59C900DCF746 /* ChatVC.swift */; };
 		9784DB1F20EF59E100DCF746 /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9784DB1E20EF59E100DCF746 /* ChannelVC.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		974CA47820EFB74E0047FEA6 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		9784DB1520EF3CF700DCF746 /* Smake-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Smake-Bridging-Header.h"; sourceTree = "<group>"; };
 		9784DB1620EF3CF800DCF746 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		9784DB1720EF3CF800DCF746 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 		9784DB1A20EF59A300DCF746 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				974CA47820EFB74E0047FEA6 /* GradientView.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 			files = (
 				9784DB1F20EF59E100DCF746 /* ChannelVC.swift in Sources */,
 				9784DB1D20EF59C900DCF746 /* ChatVC.swift in Sources */,
+				974CA47920EFB74E0047FEA6 /* GradientView.swift in Sources */,
 				97871AA220EAADEC00A88E6A /* AppDelegate.swift in Sources */,
 				9784DB1820EF3CF800DCF746 /* SWRevealViewController.m in Sources */,
 			);

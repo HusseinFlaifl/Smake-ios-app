@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -42,7 +43,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hd4-IX-MTA">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hd4-IX-MTA" customClass="GradientView" customModule="Smake" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="77"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SMACK" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q5P-Vu-obq">
@@ -60,7 +61,7 @@
                                         <state key="normal" image="smackBurger"/>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" red="0.29019607843137252" green="0.30196078431372547" blue="0.84705882352941175" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="Q5P-Vu-obq" firstAttribute="centerX" secondItem="Hd4-IX-MTA" secondAttribute="centerX" id="7ri-bH-Vl7"/>
                                     <constraint firstAttribute="bottom" secondItem="ese-pi-xKP" secondAttribute="bottom" constant="12" id="GGW-ro-cyE"/>
@@ -68,6 +69,14 @@
                                     <constraint firstAttribute="height" constant="77" id="siI-fx-yxm"/>
                                     <constraint firstItem="Q5P-Vu-obq" firstAttribute="centerY" secondItem="ese-pi-xKP" secondAttribute="centerY" id="vNA-r2-OpJ"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="bottomColor">
+                                        <color key="value" red="0.17254901959999999" green="0.83137254900000002" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="topColor">
+                                        <color key="value" red="0.29019607843137252" green="0.30196078431372547" blue="0.84705882352941175" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -93,18 +102,80 @@
                         <viewControllerLayoutGuide type="top" id="eaM-iw-er5"/>
                         <viewControllerLayoutGuide type="bottom" id="U3c-xF-p7n"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="bGk-vZ-5TB">
+                    <view key="view" contentMode="scaleToFill" id="bGk-vZ-5TB" customClass="GradientView" customModule="Smake" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Smake" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ECt-Qa-fQu">
+                                <rect key="frame" x="16" y="44" width="69.5" height="25"/>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="19"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Channels" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yfT-zx-jxr">
+                                <rect key="frame" x="16" y="89" width="67.5" height="18.5"/>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="14"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XYI-OM-aur">
+                                <rect key="frame" x="111" y="592" width="50" height="35"/>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="17"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menuProfileIcon" translatesAutoresizingMaskIntoConstraints="NO" id="u6m-M8-nMw">
+                                <rect key="frame" x="16" y="572" width="75" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="3W5-gM-0Jd"/>
+                                    <constraint firstAttribute="width" constant="75" id="G9V-w0-btY"/>
+                                </constraints>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7Fk-UV-TiT">
+                                <rect key="frame" x="0.0" y="129.5" width="375" height="422.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AMD-L2-dvo">
+                                <rect key="frame" x="281" y="87.5" width="22" height="22"/>
+                                <state key="normal" image="addChannelButton"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="7Fk-UV-TiT" secondAttribute="trailing" id="AoJ-26-BOy"/>
+                            <constraint firstItem="yfT-zx-jxr" firstAttribute="leading" secondItem="bGk-vZ-5TB" secondAttribute="leadingMargin" id="CDq-7R-VWL"/>
+                            <constraint firstAttribute="trailing" secondItem="AMD-L2-dvo" secondAttribute="trailing" constant="72" id="CqX-XB-7OM"/>
+                            <constraint firstItem="XYI-OM-aur" firstAttribute="leading" secondItem="u6m-M8-nMw" secondAttribute="trailing" constant="20" id="FDd-ZA-bPW"/>
+                            <constraint firstItem="XYI-OM-aur" firstAttribute="centerY" secondItem="u6m-M8-nMw" secondAttribute="centerY" id="FE4-b8-FEi"/>
+                            <constraint firstItem="ECt-Qa-fQu" firstAttribute="top" secondItem="eaM-iw-er5" secondAttribute="bottom" constant="24" id="HX0-fu-YLV"/>
+                            <constraint firstItem="7Fk-UV-TiT" firstAttribute="top" secondItem="AMD-L2-dvo" secondAttribute="bottom" constant="20" id="Kbr-GT-kqQ"/>
+                            <constraint firstItem="U3c-xF-p7n" firstAttribute="top" secondItem="u6m-M8-nMw" secondAttribute="bottom" constant="20" id="KgZ-Oa-fx6"/>
+                            <constraint firstItem="ECt-Qa-fQu" firstAttribute="leading" secondItem="bGk-vZ-5TB" secondAttribute="leadingMargin" id="Uon-XZ-ilN"/>
+                            <constraint firstItem="7Fk-UV-TiT" firstAttribute="leading" secondItem="bGk-vZ-5TB" secondAttribute="leading" id="dLt-cZ-PdO"/>
+                            <constraint firstItem="yfT-zx-jxr" firstAttribute="top" secondItem="ECt-Qa-fQu" secondAttribute="bottom" constant="20" id="je2-P1-vz1"/>
+                            <constraint firstItem="AMD-L2-dvo" firstAttribute="centerY" secondItem="yfT-zx-jxr" secondAttribute="centerY" id="plE-3W-Vd9"/>
+                            <constraint firstItem="u6m-M8-nMw" firstAttribute="top" secondItem="7Fk-UV-TiT" secondAttribute="bottom" constant="20" id="qR3-q9-emr"/>
+                            <constraint firstItem="u6m-M8-nMw" firstAttribute="leading" secondItem="bGk-vZ-5TB" secondAttribute="leadingMargin" id="wTd-F2-7pC"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="bottomColor">
+                                <color key="value" red="0.17254901960784313" green="0.83137254901960778" blue="0.84705882352941175" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="topColor">
+                                <color key="value" red="0.29019607843137252" green="0.30196078431372547" blue="0.84705882352941175" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UqC-oE-gMi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1137" y="-251"/>
+            <point key="canvasLocation" x="1136.8" y="-251.42428785607197"/>
         </scene>
     </scenes>
     <resources>
+        <image name="addChannelButton" width="22" height="22"/>
+        <image name="menuProfileIcon" width="99" height="99"/>
         <image name="smackBurger" width="40" height="40"/>
     </resources>
 </document>
